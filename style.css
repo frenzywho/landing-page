@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;0,400;0,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ibm-plex-mono-3');
 
 body {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
-/* Header Section */
+/* Header Section - Dark Grey Background */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1f2937;
+    background-color: #191414; /* Dark Grey */
     padding: 8px 200px;
 }
 
 .header-logo {
-    color: #f9faf8;
+    color: #f9faf8; /* Off-white */
     font-size: 24px;
     font-weight: 900;
 }
@@ -31,13 +31,13 @@ ul {
 li {
     list-style: none;
     font-size: 18px;
-    color: #E5E7EB;
+    color: #E5E7EB; /* Light Grey */
 }
 
-/* Hero Section */
-.dark-bg-color {
+/* Hero Section - Dark Grey Background */
+.hero-section { /* Was .dark-bg-color */
     display: flex;
-    background-color: #1f2937;
+    background-color: #191414; /* Dark Grey */
     justify-content: space-evenly;
     height: 300px;
     padding: 100px 200px;
@@ -54,7 +54,7 @@ li {
 }
 
 .hero-main-text {
-    color: #f9faf8;
+    color: #f9faf8; /* Off-white */
     font-weight: 900;
     font-size: 48px;
     align-self: flex-start;
@@ -62,29 +62,32 @@ li {
 
 .hero-secondary-text {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #E5E7EB; /* Light Grey */
     align-self: flex-start;
 }
 
-.sign-up {
+/* Spotify Button - Green Background */
+.spotify-button { /* Was .sign-up */
     align-self: flex-start;
-    background-color: #3882f6;
+    background-color: #1DB954; /* Spotify Green */
     color: white;
     font-weight: 700;
     border-radius: 10px;
     padding: 16px 40px;
     font-size: 16px;
-    border: none;
+    border: 2px solid transparent;
 }
 
 .img-one {
-    width: 400px;
+    width: 350px;
     height: auto;
     border-radius: 15px;
+    transform: rotate(270deg);
+    border:2px solid #E5E7EB; /* Light Grey Border */
 }
 
-/* Information Section */
-.white-bg {
+/* Bands Information Section - White Background */
+.bands-info-section { /* Was .white-bg */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,14 +101,16 @@ li {
     justify-content: space-evenly;
 }
 
-.img-two {
+.imgs {
     width: 150px;
+    border: 2px solid #191414; /* Dark Grey Border */
+    border-radius: 7px;
 }
 
-.information {
+.bands-section-title { /* Was .information */
     font-size: 36px;
     font-weight: 900;
-    color: #1f2937;
+    color: #191414; /* Dark Grey */
 }
 
 .info {
@@ -113,12 +118,12 @@ li {
     flex-direction: column;
     gap: 16px;
     max-width: 150px;
-    color: #1f2937;
+    color: #191414; /* Dark Grey */
 }
 
-/* Quote Section */
-.grey-bg {
-    background-color: #E5E7EB;
+/* Quote Section - Light Grey Background */
+.quote-section { /* Was .grey-bg */
+    background-color: #E5E7EB; /* Light Grey */
     padding: 150px 250px;
     display: flex;
     flex-direction: column;
@@ -126,72 +131,82 @@ li {
 }
 
 .quote {
-    color: #1f2937;
-    font-weight: 300;
+    color:#191414; /* Dark Grey */
+    font-weight: 100;
     font-size: 36px;
     font-style: italic;
 }
 
 .author {
     text-align: right;
+    color: #191414; /* Dark Grey */
 }
 
-/* CTA Section */
-.white-bg-2 {
+/* Call to Action (CTA) Section - White Background */
+.cta-section { /* Was .white-bg-2 */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 200px;
 }
 
-.blue-bg {
+/* CTA Box - Spotify Green Background */
+.cta-box { /* Was .blue-bg */
     display: flex;
-    justify-content: space-between;
-    background-color: #3882f6;
+    background-color: #1DB954; /* Spotify Green */
     padding: 75px 150px;
-    width: 100%;
     border-radius: 20px;
+    align-items: center;
+    gap: 60px; /* Added a gap for spacing between text and button */
+    justify-content: space-between; /* To space out text and button */
 }
 
-.text {
+.cta-text-container { /* Was .text in CTA */
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.sign-up-2 {
-    color: #f9faf8;
+/* Tunebox Button - Green Background with White Border */
+.tunebox-button { /* Was .sign-up-2 */
+    color: #f9faf8; /* Off-white text */
     border-radius: 10px;
     font-weight: 700;
-    background-color: #3882f6;
-    border: 2px solid white;
-    padding: 0px 40px;
+    background-color: #1DB954; /* Spotify Green */
+    border: 2px solid white;   
+    padding: 16px 40px;
     font-size: 16px;
 }
 
-.prim-text {
+.prim-text { /* Primary text in CTA */
     font-weight: 700;
-    color: #f9faf8;
+    color: #f9faf8; /* Off-white */
     font-size: 24px;
 }
 
-.sec-text {
-    color: #E5E7EB;
+.sec-text { /* Secondary text in CTA */
+    color: #E5E7EB; /* Light Grey */
     font-size: 18px;
 }
 
-/* Footer Section */
+/* Footer Section - Dark Grey Background */
 .footer {
     display: flex;
-    background-color: #1f2937;
+    background-color: #191414; /* Dark Grey */
     align-items: center;
     justify-content: center;
     padding: 30px 20px;
-    color: #f9faf8;
+    color: #f9faf8; /* Off-white */
     font-size: 18px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* Common button styling */
+.spotify-button,
+.tunebox-button { /* Updated from .sign-up, .sign-up-2 */
+    box-sizing: border-box;
 }
